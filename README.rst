@@ -10,7 +10,12 @@ Adding toml-based configuration for sphinx
 Overview
 --------
 
-Add a longer description here.
+I don't like conf.py
+This is a sphinx extension to reduce conf.py to:
+```
+extensions = ["sphinx_tomlconf"]
+```
+And put everything else in `sphinx.toml`
 
 Links
 -----

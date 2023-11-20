@@ -71,7 +71,7 @@ include-package-data = true
 [tool.setuptools.packages.find]
 namespaces = true
 where      = ["."]
-include    = ["tomlconf*"]
+include    = ["sphinx_tomlconf*"]
 
 [tool.setuptools.package-data]
 "*" = ["*"]
