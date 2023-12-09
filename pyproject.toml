@@ -15,13 +15,14 @@ classifiers     = [
 
 ##-- dependencies
 dependencies   = [
-    "tomler @ git+https://github.com/jgrey4296/tomler.git@main",
+    "tomlguard @ git+https://github.com/jgrey4296/tomlguard.git@main",
     "sphinx",
 ]
 
 [project.optional-dependencies]
 test = [
     "pytest < 7.0.0",
+    "pytest-mock"
 ]
 
 ##-- end dependencies

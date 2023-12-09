@@ -8,7 +8,7 @@
     :license: BSD, see LICENSE for details.
 """
 from __future__ import annotations
-import tomler
+import tomlguard as TG
 import sys
 import pathlib as pl
 
@@ -36,7 +36,7 @@ def read_toml_config(app:Sphinx, config:Config) -> None:
     extensions = []
 
     # This makes it easy to retarget if loading from [tools.sphinx] in pyproject instead:
-    data = tomler.load(toml_path).sphinx
+    data = TG.load(toml_path).sphinx
     # Update the system path
     sys.path += [str(pl.Path(x).expanduser().absolute()) for x in data.paths.sys_paths or []]
 
