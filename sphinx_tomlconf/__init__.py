@@ -17,7 +17,7 @@ if False:
     from typing import Any, Dict  # noqa
     from sphinx.application import Sphinx  # noqa
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 def setup(app):
     # type: (Sphinx) -> Dict[unicode, Any]

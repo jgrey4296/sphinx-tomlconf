@@ -1,6 +1,6 @@
 [project]
 name            = "sphinx-tomlconf"
-version         = "0.1.0"
+version         = "0.1.1"
 description     = "Adding toml-based configuration for sphinx"
 readme          = "README.md"
 requires-python = ">=3.10"
@@ -92,7 +92,7 @@ log_cli_level = "DEBUG"
 ##-- end pytest
 
 [tool.bumpver]
-version            = "0.1.0"
+current_version    = "0.1.1"
 version_pattern    = "MAJOR.MINOR.PATCH"
 commit_message     = "[bump]: version {old_version} -> {new_version}"
 tag_message        = "{new_version}"
@@ -105,7 +105,7 @@ tag_scope          = "default"
 
 [tool.bumpver.file_patterns]
 "pyproject.toml"   = [
-                   '^version\s+=\s+"{version}"$',
-                   '^current_version\s+=\s+"{version}"$'
+                   '^version\s+=\s+"{version}"',
+                   '^current_version\s+=\s+"{version}"'
 ]
-"sphinx_tomlconf/__init__.py" = ['^__version__\s+:\s+Final\[str\]\s+=\s+"{version}"']
+"sphinx_tomlconf/__init__.py" = ['^__version__\s+=\s+"{version}"']
